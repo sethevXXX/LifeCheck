@@ -42,14 +42,6 @@ fun navPanel(navController: NavHostController) {
             ) {
                 Text("daily")
             }
-            Button(
-                onClick = { navController.navigate("menuScreen") },
-                modifier = Modifier
-                    .weight(1f)
-                    .padding(8.dp)
-            ) {
-                Text("habits")
-            }
         }
     }
 }

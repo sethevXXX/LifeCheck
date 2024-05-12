@@ -98,8 +98,8 @@ fun ToDo_Screen(navController: NavHostController) {
                             Checkbox(
                                 checked = if (isChecked) true else false,
                                 onCheckedChange = {
-                                    modifyDataInFile(context, fileName, index, task, date, !isChecked)
-                                    cardTexts = cardTexts.toMutableList().also { it[index] = isChecked.toString() }
+                                    deleteDataFromFile(context, fileName, index)
+                                    cardTexts = cardTexts.toMutableList().apply { removeAt(index) }
                                 }
                             )
                             Text(

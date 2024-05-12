@@ -43,17 +43,5 @@ fun Menu_Screen(navController: NavHostController)
                 fontSize = 16.sp
             )
         }
-        Button(
-            onClick = { navController.navigate("menuScreen") },
-            modifier = Modifier
-                .padding(12.dp)
-                .size(width = 120.dp, height = 45.dp)
-        )
-        {
-            Text(
-                text = "habits",
-                fontSize = 16.sp
-            )
-        }
     }
 }
